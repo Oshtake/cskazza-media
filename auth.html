@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>C'skazza auth</title>
+<style>body{font-family:system-ui;padding:2rem;max-width:40rem;margin:auto}
+code{background:#eee;padding:.4rem;display:block;word-break:break-all;margin:1rem 0;font-size:1.1rem}</style>
+<h1>קוד ההרשאה</h1><p>העתק את הקוד והדבק בטרמינל:</p><code id=c>—</code>
+<script>
+var m=new URLSearchParams(location.search).get('code');
+document.getElementById('c').textContent = m ? decodeURIComponent(m).replace(/#_$/,'') : 'לא נמצא code בכתובת';
+</script>
